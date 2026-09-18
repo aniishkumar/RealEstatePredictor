@@ -1,0 +1,2 @@
+# FastAPI
+FastAPI is an ASGI Python framework; Uvicorn is its server. An API exposes HTTP endpoints: GET retrieves health/model metadata and POST submits JSON to create a prediction. POST is appropriate because input is a structured request body, not a bookmarkable resource. `PropertyInput` in `backend/schemas.py` is a Pydantic model; it parses types and applies bounds before prediction. Invalid input gets FastAPI's 422 response.

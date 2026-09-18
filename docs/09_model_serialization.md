@@ -1,0 +1,2 @@
+# Serialization
+Joblib serializes the fitted complete scikit-learn pipeline: learned imputation medians, scaler parameters, feature transformer and final estimator. `backend/predictor.py` loads it through a cached function, once per process. Retraining on requests would be slow, inconsistent, and unsafe. Metadata is stored separately in `models/model_metadata.json` for model name, version, source and schema.

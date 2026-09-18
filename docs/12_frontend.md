@@ -1,0 +1,2 @@
+# Frontend
+`App.jsx` owns controlled input state, request state, error state and result state. Props pass values/callbacks to `PropertyForm` and result data to `PredictionPanel`. On submit, it converts form strings to numbers, rejects non-numbers, calls the single API service with `async/await`, and conditionally renders a result/error/loading state. Labels, visible focus treatment, semantic form markup and live result announcements support accessibility.

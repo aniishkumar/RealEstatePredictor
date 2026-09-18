@@ -1,0 +1,2 @@
+# Evaluation
+`MAE = mean(|actual − prediction|)` and is an average dollar miss. MSE squares errors, so large errors count more; `RMSE = sqrt(MSE)` restores dollar units while retaining that penalty. `R² = 1 − residual sum of squares / total sum of squares`; it is not “percent accuracy.” Test rows are withheld so metrics approximate generalization. Tuning repeatedly on the test set leaks evaluation information; use a validation split/cross-validation for extensive tuning.

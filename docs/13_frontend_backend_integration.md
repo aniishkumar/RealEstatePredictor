@@ -1,0 +1,2 @@
+# Integration lifecycle
+1. React collects controlled values. 2. `services/api.js` serializes them with `JSON.stringify`. 3. Browser POSTs to FastAPI. 4. Pydantic validates. 5. `predictor.predict` makes a one-row DataFrame. 6. The pipeline transforms and predicts. 7. FastAPI serializes `PredictionResponse`. 8. React parses JSON and re-renders. Network timeout, non-2xx response, and API-down state are turned into safe user messages.

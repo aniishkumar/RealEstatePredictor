@@ -1,0 +1,2 @@
+# Deployment and operations
+Containerize frontend and API separately, inject allowed CORS origins and artifact paths through environment configuration, publish versioned model artifacts, and expose health checks. Keep API processes stateless so replicas scale horizontally. Observe request rate, latency, 4xx/5xx rates, model version, input distributions, and delayed ground-truth errors for model drift. Never put credentials in the repository.
