@@ -5,6 +5,7 @@ __pycache__/
 frontend/node_modules/
 frontend/dist/
 data/raw/cal_housing.tgz
+data/processed/*.csv
 models/*.joblib
 models/model_metadata.json
 models/model_metrics.json
